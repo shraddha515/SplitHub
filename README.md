@@ -1,59 +1,189 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
 
-## About Laravel
+# SplitHub
+SplitHub is a smart group expense and split-payment management platform built with Laravel. It helps users manage shared expenses for trips, roommates, teams, events, and daily group activities with automated balance calculations, settlements, analytics, and APK support for mobile usage.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+SplitHub – Smart Expense Sharing & Split Payment Manager
+Project Description
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+SplitHub is a smart split-payment and shared expense management application designed for groups, roommates, trips, events, students, and teams.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+The application helps users track shared expenses, calculate balances automatically, manage settlements, and simplify group spending without manual calculations.
 
-## Learning Laravel
+Users can create groups, add members, record expenses, split payments equally or custom-wise, and view who owes whom in real time.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+The main objective of this project is to solve the common problem of managing shared expenses among multiple people using an easy-to-use web application with automated calculations and reporting.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+This project is being developed collaboratively by students:
 
-## Laravel Sponsors
+Shraddha Wankhade
+Sudhanshu Sharma
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Project Title
+SplitHub: Smart Expense Sharing & Split Payment System
+Team Members
+Name	                          Role
+Shraddha Wankhade	       Full Stack Developer & UI Designer
+Sudhanshu Sharma	       Full Stack Developer & Backend Developer 
 
-### Premium Partners
+Project Type
+Major Project
+Collaborative Student Project
+Web Application
+APK-Based Expense Management System
+Project Objective
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+The main objective of SplitHub is to:
 
-## Contributing
+Simplify shared expense tracking
+Automatically calculate balances between users
+Reduce confusion in group payments
+Manage settlements efficiently
+Provide reports and summaries for group spending
+Build a real-world financial management application using Laravel
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Main Features
+User Authentication:
+User Registration
+User Login & Logout
+Forgot Password
+User Profile Management
 
-## Code of Conduct
+Group Management:
+Create Groups
+Add/Remove Members
+Manage Group Participants
+Group Dashboard
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Expense Management:
+Add Expenses
+Edit/Delete Expenses
+Add Expense Categories
+Upload Notes/Descriptions
 
-## Security Vulnerabilities
+Expense Splitting:
+Equal Split
+Percentage Split
+Custom Amount Split
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Balance Calculation:
+Automatic Balance Calculation
+Net Amount Tracking
+Simplified Debt Management
 
-## License
+Settlement System:
+Mark Payments as Settled
+Settlement History
+Payment Records
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Dashboard & Reports:
+Monthly Reports
+Expense Analytics
+Spending Charts
+Category-wise Reports
+
+Notifications:
+Group Invites
+Expense Alerts
+Settlement Notifications
+
+APK Support:
+Mobile-Friendly Responsive UI
+Future APK Build Support
+Web-to-APK Deployment Ready
+
+Technologies Used
+Frontend
+HTML5
+CSS3
+JavaScript
+Bootstrap
+jQuery
+AJAX
+
+Backend
+Laravel
+PHP
+
+Database
+MySQL
+
+Tools & Platforms
+GitHub
+GitHub Desktop
+XAMPP
+VS Code
+Localhost Environment
+
+Software Requirements
+PHP 8+
+Composer
+XAMPP/WAMP
+MySQL
+Laravel 11/12
+Node.js & NPM
+Git & GitHub Desktop
+
+Hardware Requirements
+Minimum 4GB RAM
+Dual Core Processor
+5GB Free Storage
+Internet Connection
+
+Modules of the Project
+Authentication Module
+Group Management Module
+Expense Management Module
+Split Calculation Module
+Settlement Module
+Notification Module
+Reports & Analytics Module
+Admin Module
+
+Database Tables
+users
+groups
+group_members
+expenses
+expense_payers
+expense_splits
+settlements
+categories
+notifications
+
+Project Workflow
+User Registration/Login
+        ↓
+Create Group
+        ↓
+Add Members
+        ↓
+Add Expenses
+        ↓
+Split Expense
+        ↓
+Calculate Balances
+        ↓
+Settlement Tracking
+        ↓
+Reports & Analytics
+
+Future Enhancements
+Razorpay Integration
+UPI Payment Integration
+OCR Bill Scanner
+AI Expense Categorization
+Multi-Currency Support
+Real-Time Notifications
+Native Android APK
+Dark Mode
+Voice Expense Entry
+Advantages of SplitHub
+Easy expense management
+Reduces payment confusion
+Real-time balance tracking
+Secure user authentication
+User-friendly interface
+Collaborative group management
+Mobile responsive design
+
