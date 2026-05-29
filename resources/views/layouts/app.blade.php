@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <link href="{{ asset('css/splithub.css') }}" rel="stylesheet">
+   
 </head>
 <body>
     <nav class="navbar navbar-expand-lg nav-glass sticky-top">
@@ -46,19 +47,21 @@
             <h5 class="offcanvas-title brand-mark"><span class="brand-icon"><img src="{{ asset('images/splithub-logo.png') }}" alt="SplitHub logo"></span> SplitHub</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body ">
-            @auth
-                <button class="btn btn-dark" href="{{ route('dashboard') }}" style="height: 50px;">Dashboard</button>
-                <button class="btn btn-light text-start" href="{{ route('groups.index') }}" style="height: 50px;">Groups</button>
-                <form method="POST" action="{{ route('logout') }}">
-                    @csrf
-                    <button class="btn btn-dark " style="height: 50px; ">Logout</button>
-                </form>
-            @else
-                <a class="btn btn-light" href="{{ route('landing') }}#features">Features</a>
-                <a class="btn btn-outline-dark" href="{{ route('login') }}">Login</a>
-                <a class="btn btn-dark" href="{{ route('register') }}">Start free</a>
-            @endauth
+        <div class="offcanvas-body">
+            <div class="stacked-btns">
+                @auth
+                    <a class="stacked-btn secondary text-start" href="{{ route('dashboard') }}">Dashboard</a>
+                    <a class="stacked-btn secondary text-start" href="{{ route('groups.index') }}">Groups</a>
+                    <form method="POST" action="{{ route('logout') }}">
+                        @csrf
+                        <button type="submit" class="stacked-btn primary w-100">Logout</button>
+                    </form>
+                @else
+                    <a class="stacked-btn secondary" href="{{ route('landing') }}#features">Features</a>
+                    <a class="stacked-btn secondary" href="{{ route('login') }}">Login</a>
+                    <a class="stacked-btn primary" href="{{ route('register') }}">Start free</a>
+                @endauth
+            </div>
         </div>
     </div>
 

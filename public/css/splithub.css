@@ -722,3 +722,50 @@ a {
         max-width: none;
     }
 }
+
+
+/* buttons app.blade */
+.offcanvas .stacked-btns {
+            display: grid;
+            gap: 1rem;
+            width: 100%;
+        }
+        .offcanvas .stacked-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 3.25rem;
+            padding: .85rem 1.2rem;
+            border-radius: 1.5rem;
+            font-weight: 800;
+            font-size: .94rem;
+            letter-spacing: .04em;
+            text-transform: uppercase;
+            transition: transform .18s ease, box-shadow .18s ease, background .18s ease, color .18s ease;
+            text-decoration: none;
+            border: 1px solid transparent;
+            box-shadow: 0 14px 30px rgba(0, 0, 0, .08);
+        }
+        .offcanvas .stacked-btn.primary {
+            color: #fff;
+            background: linear-gradient(135deg, #4da8ff 0%, #0063ff 100%);
+            border-color: rgba(77, 168, 255, .45);
+        }
+        .offcanvas .stacked-btn.secondary {
+            color: #e9eef7;
+            background: rgba(255, 255, 255, .08);
+            border-color: rgba(255, 255, 255, .14);
+        }
+        .offcanvas .stacked-btn:hover,
+        .offcanvas .stacked-btn:focus {
+            transform: translateY(-1px);
+            box-shadow: 0 18px 40px rgba(0, 0, 0, .12);
+            background-color: rgba(255, 255, 255, .12);
+            color: #fff;
+        }
+        .offcanvas .stacked-btn.text-start {
+            justify-content: flex-start;
+        }
+        .offcanvas .stacked-btn.w-100 {
+            width: 100%;
+        }
