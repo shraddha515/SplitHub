@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>@yield('title', 'SplitHub')</title>
+    <link rel="icon" type="image/png" href="{{ asset('images/splithub-logo.png') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <link href="{{ asset('css/splithub.css') }}" rel="stylesheet">
@@ -13,7 +14,7 @@
     <nav class="navbar navbar-expand-lg nav-glass sticky-top">
         <div class="container">
             <a class="navbar-brand brand-mark" href="{{ auth()->check() ? route('dashboard') : route('landing') }}">
-                <span class="brand-icon"><i class="bi bi-intersect"></i></span>
+                <span class="brand-icon"><img src="{{ asset('images/splithub-logo.png') }}" alt="SplitHub logo"></span>
                 SplitHub
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-controls="mobileNav" aria-label="Open menu">
@@ -42,19 +43,19 @@
 
     <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileNav">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title brand-mark"><span class="brand-icon"><i class="bi bi-intersect"></i></span> SplitHub</h5>
+            <h5 class="offcanvas-title brand-mark"><span class="brand-icon"><img src="{{ asset('images/splithub-logo.png') }}" alt="SplitHub logo"></span> SplitHub</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body d-grid gap-2">
+        <div class="offcanvas-body ">
             @auth
-                <a class="btn btn-light text-start" href="{{ route('dashboard') }}">Dashboard</a>
-                <a class="btn btn-light text-start" href="{{ route('groups.index') }}">Groups</a>
+                <button class="btn btn-dark" href="{{ route('dashboard') }}" style="height: 50px;">Dashboard</button>
+                <button class="btn btn-light text-start" href="{{ route('groups.index') }}" style="height: 50px;">Groups</button>
                 <form method="POST" action="{{ route('logout') }}">
                     @csrf
-                    <button class="btn btn-dark w-100">Logout</button>
+                    <button class="btn btn-dark " style="height: 50px; ">Logout</button>
                 </form>
             @else
-                <a class="btn btn-light text-start" href="{{ route('landing') }}#features">Features</a>
+                <a class="btn btn-light" href="{{ route('landing') }}#features">Features</a>
                 <a class="btn btn-outline-dark" href="{{ route('login') }}">Login</a>
                 <a class="btn btn-dark" href="{{ route('register') }}">Start free</a>
             @endauth

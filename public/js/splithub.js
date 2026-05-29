@@ -142,16 +142,32 @@
                         datasets: [{
                             label: 'Monthly expense',
                             data: Object.values(grouped),
-                            backgroundColor: ['#2563eb', '#0f766e', '#f59e0b', '#e11d48'],
-                            borderRadius: 8,
+                            backgroundColor: ['#1fb6ff', '#087bff', '#d9e2ef', '#28f29c'],
+                            borderRadius: 10,
                         }],
                     },
                     options: {
                         responsive: true,
-                        plugins: { legend: { display: false } },
+                        plugins: {
+                            legend: { display: false },
+                            tooltip: {
+                                backgroundColor: '#071326',
+                                borderColor: 'rgba(31, 182, 255, .35)',
+                                borderWidth: 1,
+                                titleColor: '#ffffff',
+                                bodyColor: '#d9e2ef',
+                            },
+                        },
                         scales: {
-                            y: { beginAtZero: true, grid: { color: '#e2e8f0' } },
-                            x: { grid: { display: false } },
+                            y: {
+                                beginAtZero: true,
+                                ticks: { color: '#9fb2c9' },
+                                grid: { color: 'rgba(112, 160, 215, .16)' },
+                            },
+                            x: {
+                                ticks: { color: '#9fb2c9' },
+                                grid: { display: false },
+                            },
                         },
                     },
                 });

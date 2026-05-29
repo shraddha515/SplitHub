@@ -10,14 +10,19 @@
 
 <section class="app-shell">
     <div class="container">
-        <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
-            <div>
-                <span class="section-label">Personal dashboard</span>
-                <h1 class="fw-bold mt-2 mb-0">Hi {{ auth()->user()->name }}, your money map is ready.</h1>
+        <div class="dashboard-hero mb-4">
+            <div class="dashboard-hero-copy">
+                <div>
+                    <span class="section-label">Personal dashboard</span>
+                    <h1 class="fw-bold mt-2 mb-0">Hi {{ auth()->user()->name }}, your money map is ready.</h1>
+                </div>
+                <button class="btn btn-dark rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#createGroupModal">
+                    <i class="bi bi-plus-lg me-1"></i> New group
+                </button>
             </div>
-            <button class="btn btn-dark rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#createGroupModal">
-                <i class="bi bi-plus-lg me-1"></i> New group
-            </button>
+            <div class="dashboard-hero-image">
+                <img src="{{ asset('images/splithub-hero.png') }}" alt="SplitHub split payment dashboard preview">
+            </div>
         </div>
 
         <div class="row g-3 mb-4">

@@ -16,19 +16,10 @@
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="phone-stage mx-auto">
-                    <div class="expense-orbit orbit-one">A owes B<br><strong>₹500</strong></div>
-                    <div class="expense-orbit orbit-two">Goa trip<br><strong>₹18,420</strong></div>
-                    <div class="app-phone">
-                        <div class="phone-top"></div>
-                        <div class="mini-chart">
-                            <span style="height:72%"></span><span style="height:48%"></span><span style="height:88%"></span><span style="height:58%"></span>
-                        </div>
-                        <div class="balance-pill positive">You are owed ₹2,150</div>
-                        <div class="settle-row"><i class="bi bi-arrow-down-left"></i><span>Riya owes Arjun</span><strong>₹840</strong></div>
-                        <div class="settle-row"><i class="bi bi-arrow-up-right"></i><span>You owe Neha</span><strong>₹300</strong></div>
-                        <div class="settle-row"><i class="bi bi-check2-circle"></i><span>Food settled</span><strong>Done</strong></div>
-                    </div>
+                <div class="hero-visual mx-auto">
+                    <span class="hero-pulse pulse-one"></span>
+                    <span class="hero-pulse pulse-two"></span>
+                    <img src="{{ asset('images/splithub-hero.png') }}" alt="SplitHub split payment dashboard preview">
                 </div>
             </div>
         </div>

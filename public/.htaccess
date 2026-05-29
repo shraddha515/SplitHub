@@ -5,6 +5,10 @@
 
     RewriteEngine On
 
+    # Keep XAMPP URLs on the exact project folder casing.
+    RewriteCond %{REQUEST_URI} ^/Splithub/public/?(.*)$
+    RewriteRule ^ http://localhost/SplitHub/public/%1 [L,R=301]
+
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
